@@ -11,6 +11,8 @@
 
 :root {
     /* font-size */
+    --fs-10: 10px;
+    --fs-14: 14px;
     --fs-16: 16px;
     --fs-sm: 18px;
     --fs-md: 20px;
@@ -42,7 +44,7 @@
 }
 
 .nav-head {
-    font-family: Racing Sans One;
+    font-family: "Racing Sans One", sans-serif;
     font-size: var(--fs-xl);
     font-weight: 400;
     line-height: 35.7px;
@@ -52,7 +54,7 @@
 
 .navlink {
     font-family: "Poppins", sans-serif;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-16);
     font-weight: 500;
     line-height: 24px;
     text-align: left;
@@ -61,7 +63,7 @@
 
 .nav-btn {
     font-family: "Poppins", sans-serif;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-16);
     font-weight: 600;
     line-height: 24px;
     text-align: center;
@@ -75,16 +77,193 @@
 
 /* section-1 */
 .bgimg {
-    background-image: url(../images/sec1bgimg.png);
+    background-image: url(../images/png/sec1bgimg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
+.pt-8 {
+    padding-top: 12rem;
+}
+
 .sec1-title {
     font-family: Sans Serif Collection;
-    font-size: 64px;
+    font-size: var(--fs-10xl);
     font-weight: 400;
     line-height: 75.2px;
     text-align: center;
+    color: var(--color-white);
+}
+
+.travel {
+    font-family: Sans Serif Collection;
+    font-size: var(--fs-10xl);
+    font-weight: 400;
+    line-height: 75.2px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.blurbox {
+    max-width: 930px;
+    width: 100%;
+    /* height: 300px; */
+    padding: 30px;
+    margin-top: 65px;
+    border-radius: 16px;
+    background: var(--color-voilet);
+    border: 1px solid #FDFDFD66;
+}
+
+.stay {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.goinbox {
+    width: 452px;
+    /* height: 48px; */
+    border-radius: 8px;
+    background: #FFFFFF14;
+    border: 1px solid #FFFFFF99;
+    padding: 16px;
+}
+
+.going {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--color-white);
+    text-align: left;
+}
+
+.check {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-10);
+    font-weight: 300;
+    line-height: 15px;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.jun {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.calenderbox {
+    width: 180px;
+    /* height: 48px; */
+    border-radius: 8px;
+    background: #FFFFFF14;
+    border: 1px solid #FFFFFF99;
+    padding: 5px;
+}
+
+.room {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-14);
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    color: var(--color-white);
+}
+
+.checkin {
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    border: 0.6px solid #FFFFFF;
+}
+
+.flight {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.srch-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-white);
+    width: 122px;
+    height: 52px;
+    border-radius: 60px;
+    background: var(--color-blue-gredient);
+    border: none;
+    margin-top: 34px;
+}
+
+.input_2 {
+    /* max-width: 180px; */
+    border-radius: 8px;
+    border: 1px solid var(--grey3);
+    background: var(--black2);
+    padding: 5px 10px 7px 10px;
+
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0.6px solid #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 5px;
+    top: 0px;
+}
+
+.form-group input:checked+label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 6px;
+    height: 14px;
+    border: 0.6px solid #FFFFFF;
+    border-radius: 2px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
