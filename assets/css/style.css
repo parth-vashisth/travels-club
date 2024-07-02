@@ -377,7 +377,7 @@
 
 /* section-4 */
 .pt-160 {
-    padding-top: 160px;
+    padding-top: 160px !important;
 }
 
 .money {
@@ -630,10 +630,116 @@ slick-track {
 }
 
 .slick-dots {
-    bottom: -96px;
+    bottom: -65px;
 }
 
 .p-100 {
     padding-bottom: 100px;
     padding-top: 100px;
+}
+
+.max-w-561 {
+    max-width: 561px;
+}
+
+.max-w-564 {
+    max-width: 564px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    color: var(--color-white);
+
+}
+
+.acc-head {
+    font-family: "Sans Serif Collection",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.acc-txt {
+    color: #B5B3B7;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/svg/down.png);
+}
+
+.accordion-button::after {
+    background-image: url(../images/svg/down.png);
+    background-repeat: no-repeat;
+}
+
+.accordion-button {
+    background: transparent;
+    color: var(--color-white);
+    padding: 0;
+    align-items: center;
+}
+
+.accordion-item {
+    background: #140D1B;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion {
+    --bs-accordion-border-color: none;
+    max-width: 749px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border_bottom {
+    border-bottom: 2px solid #E9EBED;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+    .lg-view {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -150%;
+        background-color: var(--color-menu);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        transition: 0.5s;
+        gap: 20px;
+    }
+
+    .nav-icon {
+        z-index: 4;
+    }
+
+    .show {
+        left: 0%;
+    }
+
+}
+
+@media (min-width:992px) {
+    .nav-icon {
+        display: none;
+    }
+
 }
