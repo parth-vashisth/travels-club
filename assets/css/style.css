@@ -86,7 +86,7 @@
 }
 
 .pt-8 {
-    padding-top: 12rem;
+    padding-top: 16rem;
 }
 
 .sec1-title {
@@ -116,6 +116,7 @@
     border-radius: 16px;
     background: var(--color-voilet);
     border: 1px solid #FDFDFD66;
+    z-index: 2;
 }
 
 .stay {
@@ -270,11 +271,30 @@
     transform: rotate(45deg);
 }
 
+.bottom-39 {
+    bottom: -30%;
+}
+
+.pb-145 {
+    padding-bottom: 145px !important;
+}
+
 /* section-2 */
 .bgclr {
     background-color: #140D1B;
     /* height: 100vh; */
     margin-top: -5px;
+}
+
+.post9 {
+    top: 0%;
+    right: 0%;
+}
+
+.post10 {
+    bottom: -60%;
+    right: 0%;
+    z-index: 2;
 }
 
 .about {
@@ -284,6 +304,11 @@
     line-height: 56.4px;
     text-align: left;
     color: var(--color-white);
+}
+
+.post8 {
+    left: 0%;
+    top: -35%;
 }
 
 .para {
@@ -314,6 +339,11 @@
 /* section-3 */
 .mt-24 {
     margin-top: 24px;
+}
+
+.top1 {
+    top: -3%;
+    left: 0%;
 }
 
 .border-radius {
@@ -414,6 +444,11 @@
 
 }
 
+.top2 {
+    transform: translate(0%, -115%);
+    right: 0%;
+}   
+
 .bluebox {
     background: var(--color-navy-blue);
     padding: 15px;
@@ -496,7 +531,17 @@ slick-track {
     border-radius: 42px;
     background: #01010140;
     backdrop-filter: blur(10px);
+}
 
+.post6 {
+    right: 0%;
+    transform: translate(0%, -20%)
+}
+
+.post7 {
+    left: 0%;
+    transform: translate(0%, 12%);
+    z-index: 2;
 }
 
 /* section-5 */
@@ -507,7 +552,7 @@ slick-track {
     height: 100vh;
     width: 100%;
     background-color: #25184C;
-    margin-top: -10px;
+    margin-top: -3px;
 }
 
 .travelbox {
@@ -598,6 +643,15 @@ slick-track {
     gap: 9rem;
 }
 
+.post5 {
+    right: 0%;
+    top: 11%;
+}
+
+.bottom-5 {
+    bottom: -5%;
+}
+
 /* section-6 */
 .childslide {
     width: 367px;
@@ -635,7 +689,23 @@ slick-track {
 
 .p-100 {
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 160px;
+}
+
+.post2 {
+    bottom: -75%;
+    left: 0%;
+    z-index: 2;
+}
+
+.post3 {
+    bottom: 5%;
+    left: 0%;
+}
+
+.post4 {
+    right: 0%;
+    bottom: 2%;
 }
 
 /* accordion */
@@ -709,6 +779,16 @@ slick-track {
 .border_bottom {
     border-bottom: 2px solid #E9EBED;
     margin-bottom: 16px;
+}
+
+.post {
+    bottom: -30%;
+    right: 0%;
+}
+
+.post1 {
+    bottom: 0%;
+    right: 0%;
 }
 
 /* footer */
