@@ -85,13 +85,25 @@
     height: 100vh;
 }
 
+.dn {
+    display: none;
+}
+
 .pt-8 {
-    padding-top: 16rem;
+    padding-top: 36rem;
+}
+
+.pt-370 {
+    padding-top: 370px !important;
+}
+
+.pb-600 {
+    padding-bottom: 600px !important;
 }
 
 .sec1-title {
     font-family: "Sans Serif Collection", sans-serif;
-    font-size: var(--fs-10xl);
+    font-size: 42px;
     font-weight: 400;
     line-height: 75.2px;
     text-align: center;
@@ -100,7 +112,7 @@
 
 .travel {
     font-family: "Sans Serif Collection", sans-serif;
-    font-size: var(--fs-10xl);
+    font-size: 42px;
     font-weight: 400;
     line-height: 75.2px;
     text-align: center;
@@ -126,6 +138,7 @@
     line-height: 24px;
     text-align: center;
     color: var(--color-white);
+    text-wrap: nowrap;
 }
 
 .goinbox {
@@ -279,6 +292,10 @@
     padding-bottom: 145px !important;
 }
 
+.pb-100 {
+    padding-bottom: 100px;
+}
+
 /* section-2 */
 .bgclr {
     background-color: #140D1B;
@@ -379,7 +396,7 @@
 }
 
 .img-box:hover img {
-    scale: 1.1;
+    scale: 0.9;
 }
 
 .img-box:hover .blur-txt {
@@ -419,6 +436,10 @@
     color: var(--color-white);
 }
 
+.dots .slick-dots {
+    bottom: 30px !important;
+}
+
 .hide {
     font-family: "Sans Serif Collection", sans-serif;
     font-size: var(--fs-lg);
@@ -447,12 +468,14 @@
 .top2 {
     transform: translate(0%, -115%);
     right: 0%;
-}   
+}
 
 .bluebox {
     background: var(--color-navy-blue);
     padding: 15px;
     width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .corner {
@@ -549,18 +572,20 @@ slick-track {
     background-image: url(../images/png/sec5bgimg.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #25184C;
-    margin-top: -3px;
+    margin-top: -1px;
 }
 
 .travelbox {
     width: 100%;
-    height: 480px;
-    padding: 30px 50px 30px 50px;
+    min-height: 480px;
+    height: 100%;
+    padding: 30px 20px 30px 10px;
     border-radius: 20.69px;
     background: rgba(18, 25, 210, .1);
+    margin-top: 24px;
 }
 
 .club {
@@ -574,7 +599,7 @@ slick-track {
 
 .seven {
     font-family: "Poppins", sans-serif;
-    font-size: var(--fs-md);
+    font-size: 14px;
     font-weight: 600;
     line-height: 30px;
     text-align: left;
@@ -583,7 +608,7 @@ slick-track {
 
 .max {
     font-family: "Poppins", sans-serif;
-    font-size: var(--fs-md);
+    font-size: 14px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
@@ -602,7 +627,7 @@ slick-track {
 
 .farm {
     font-family: " Poppins", sans-serif;
-    font-size: var(--fs-16);
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -612,7 +637,7 @@ slick-track {
 
 .eighty {
     font-family: "Sans Serif Collection", sans-serif;
-    font-size: var(--fs-32);
+    font-size: 30px;
     font-weight: 400;
     line-height: 37.6px;
     text-align: left;
@@ -662,7 +687,7 @@ slick-track {
 
 .dar {
     font-family: "Sans Serif Collection", sans-serif;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     font-weight: 400;
     line-height: 36px;
     text-align: center;
@@ -810,6 +835,11 @@ slick-track {
     line-height: 25.6px;
     text-align: left;
     color: #AFAFAF;
+    margin-top: 24px;
+}
+
+.mt-5 {
+    margin-top: -5px !important;
 }
 
 .f-links {
@@ -857,9 +887,34 @@ slick-track {
 
 }
 
+@media (min-width:576px) {
+
+    .seven,
+    .max {
+        font-size: 20px !important;
+    }
+
+    .travel,
+    .sec1-title {
+        font-size: 64px;
+    }
+}
+
 @media (min-width:992px) {
     .nav-icon {
         display: none;
+    }
+
+    .dn {
+        display: flex;
+    }
+
+    .pt-8 {
+        padding-top: 25rem;
+    }
+
+    .pt-370 {
+        padding-top: 135px !important;
     }
 
 }

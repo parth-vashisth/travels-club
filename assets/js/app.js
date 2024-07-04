@@ -8,7 +8,7 @@ $(".parentslider").slick({
     dots: true,
     infinite: true,
     speed: 300,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
@@ -16,7 +16,7 @@ $(".parentslider").slick({
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
@@ -24,6 +24,15 @@ $(".parentslider").slick({
         },
         {
             breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true
+            }
+
+        },
+        {
+            breakpoint: 476,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
